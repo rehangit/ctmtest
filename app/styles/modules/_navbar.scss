@@ -28,8 +28,7 @@
     width: 100%;
     
     &-li {
-      width: 14.28%; // = 100/7 as there are 7 menu items.
-      text-align: center; 
+      width: 100%;
     }
 
     &-btn {
@@ -103,6 +102,13 @@
         margin: 10px 15px 0;
         position: static;
         text-align: left;
+      }
+    }
+
+    &-nav {
+      &-li {
+        width: 14.28%; // = 100/7 as there are 7 menu items.
+        text-align: center; 
       }
     }
   }
