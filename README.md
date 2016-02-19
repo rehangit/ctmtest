@@ -5,7 +5,7 @@ This project implements a simple web page with credit card selection panels.
 ## Notes about the solution
 
 1. The solution is built using Bootstrap and Angular for scaffolding of the page.
-2. Uses Angular for implementing the interactive funcaitonality. Currently it uses a single controller in the router to load page templates. Navigation code (incomplete) is tucked in a template file that is included in using ng-include. The main view is loaded by the router. The constructor of the controller also loads in the data json file from the model folder.
+2. Uses Angular for implementing the interactive functionality. Currently it uses a single controller in the router to load page templates. Navigation code (incomplete) is tucked in a template file that is included in using ng-include. The main view is loaded by the router. The constructor of the controller also loads in the data json file from the model folder.
 3. The styling is organised to be scalable using smacss guideline. A simple BEM based naming convention is used for style classes. This runs somewhat against the Bootstrap naming convention. However using flat classes has more benefit in scalability and modularity and avoids the problems associated with specificity. 
 4. The svg icon files provided in the asset folder could not be utilised directly as all the icons were exported in a single file without ids or names. As a workaround I have used the symbol font file from the main CTM website to link the icons to menu items.
 
