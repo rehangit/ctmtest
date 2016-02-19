@@ -12,11 +12,13 @@
     &-ctm {
       display: inline-block;
       position: absolute;
-      margin: 10px auto;
-      text-align: center;
+      margin: 5px auto;
+      text-align: right;
       min-width: 100px;
       & img {
-        max-width: 60%
+        max-width: 75%;
+        vertical-align: text-top;
+        height: 50px;
       }
     }
   }
@@ -26,7 +28,8 @@
     width: 100%;
     
     &-li {
-      width: 14.28%;
+      width: 14.28%; // = 100/7 as there are 7 menu items.
+      text-align: center; 
     }
 
     &-btn {

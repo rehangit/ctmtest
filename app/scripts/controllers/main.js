@@ -17,7 +17,6 @@ angular.module('cardsApp')
 
     // this should be moved to a service    
     $http.get('model/cards.json').success(function(data) {
-      console.log(data);
       main.cards = data;
       main.selected = main.cards[0];
     });
