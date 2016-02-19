@@ -8,7 +8,7 @@
  * Controller of the cardsApp
  */
 angular.module('cardsApp')
-  .controller('MainCtrl', function ($http) {
+  .controller('MainCtrl', function ($http, $timeout) {
     var main = this;
     main.cards = [];
     main.selected = null;
@@ -27,6 +27,10 @@ angular.module('cardsApp')
         main.selected = null;
       } else {
         main.selected = card;
+        $timeout(function() {
+          var active = $(".cards-panel.active");
+          $("html,body").animate({scrollTop: active.offset().top-20}, 'fast');
+        }, 500);
       }
     }
 
