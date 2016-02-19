@@ -1,0 +1,74 @@
+@import "vars";
+
+.header,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  p > span  {
+    margin-right: 5px;
+  }
+}
+
+/* Custom page header */
+.header {
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+}
+
+// Using official ComparetTheMarket fonts from their website...
+@font-face {
+  font-family: "ctm-icons";
+  src: url(//cdn.comparethemarket.com/market/assets/responsive2015/fonts/ctm-icons__d0a72e6394a14bf95686d5b4801527f0.eot);
+  src: url(//cdn.comparethemarket.com/market/assets/responsive2015/fonts/ctm-icons__d0a72e6394a14bf95686d5b4801527f0.eot?#iefix) format("embedded-opentype"),
+    url(//cdn.comparethemarket.com/market/assets/responsive2015/fonts/ctm-icons__3a157e02b60fb6bef56d0560717deb60.woff) format("woff"),
+    url(//cdn.comparethemarket.com/market/assets/responsive2015/fonts/ctm-icons__6f920528662f0648a3747ebf63d14bb3.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SUN";
+  src: url("//cdn.comparethemarket.com/fonts/Sun_LT_7_.eot");
+  src: url("//cdn.comparethemarket.com/fonts/Sun_LT_7_.eot?#iefix") format("embedded-opentype"), url("//cdn.comparethemarket.com/fonts/Sun_LT_7_.svg?#SUN") format("svg"), url("//cdn.comparethemarket.com/fonts/Sun_LT_7_.woff") format("woff"), url("//cdn.comparethemarket.com/fonts/Sun_LT_7_.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal
+}
+
+
+body {
+  font-family: "SUN", Helvetica, Arial, sans-serif;
+  background-color: $bgcolor;
+}

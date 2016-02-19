@@ -1,0 +1,27 @@
+<div class="cards-panel" ng-repeat="c in main.cards" ng-class="{'active': main.selected===c}">
+  <div class="cards-btn" ng-click="main.selectPanel(c)">
+    <i class="cards-btn-icon glyphicon" ng-class="main.selected===c?'glyphicon-chevron-down':'glyphicon-chevron-right'"></i>
+    <span class="cards-btn-name">{{c.name}}</span>
+    <span class="cards-btn-rate">{{c.apr}}% APR</span>
+  </div>
+  <div class="cards-info">
+      <div class="col-sm-3 text-center">
+        <img class="cards-info-img" ng-src="{{main.getImageSrc(c)}}">
+      </div>
+      <div class="col-sm-6">
+        <div class="cards-info-text" >
+          {{c.information}}
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="cards-info-cashback-t">
+          Cashback
+        </div>
+        <div class="cards-info-cashback-a">
+          {{c.cashback | currency:"£"}}
+        </div>
+        
+      </div>
+
+  </div>
+</div>

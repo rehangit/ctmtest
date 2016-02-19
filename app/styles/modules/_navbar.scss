@@ -1,0 +1,106 @@
+@import "../vars";
+.navbar {
+  margin-bottom: 50px;
+  background-color: transparent;
+  &-default {
+    border: none;
+    .navbar-nav > li > a {
+      color: white;
+    }
+  }
+  &-brand {
+    &-ctm {
+      display: inline-block;
+      position: absolute;
+      margin: 10px auto;
+      text-align: center;
+      min-width: 100px;
+      & img {
+        max-width: 60%
+      }
+    }
+  }
+  
+  &-nav {
+    color: white;
+    width: 100%;
+    
+    &-li {
+      width: 14.28%;
+    }
+
+    &-btn {
+      border-radius: $borderradius;
+      background: linear-gradient(to top, $colbtnbottom, $colbtntop);
+      margin-right: 5px;
+      color: white;
+    }
+    
+    &icon {
+      font-family: 'ctm-icons';
+      margin-right: 10px;
+      font-style: normal;
+    }
+    
+    &-home::before {
+      content: "\f127 ";
+    }
+    &-vehicles::before {
+      content: "\f108 ";
+    }
+    &-homeins::before {
+      content: "\f122 ";
+    }
+    &-energy::before {
+      content: "\f11c ";
+    }
+    &-finance::before {
+      content: "\f114 ";
+    }
+    &-life::before {
+      content: "\f12e ";
+    }
+    &-business::before {
+      content: "\f107 ";
+    }
+    &-travel::before {
+      content: "\f13c ";
+    }
+    &-pet::before {
+      content: "\f139 ";
+    }
+  }
+}
+.container > .navbar-header {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  color: white;
+  
+  &.navbar-nav-btn {
+    background: black;
+  }
+}
+
+
+
+@media (min-width: $screen-sm-min) {
+  .navbar {
+    &-brand {
+      &-ctm {
+        display: block;
+        width: 100%;
+        margin: 10px 15px 0;
+        position: static;
+        text-align: left;
+      }
+    }
+  }
+}

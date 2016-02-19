@@ -1,0 +1,32 @@
+<div class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="row">
+      <a class="navbar-brand-ctm" href="#/">
+        <img src="images/ctm-logo.svg">
+      </a>
+    </div>
+    <div class="row">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+        <ul class="nav navbar-nav">
+
+          <li class="navbar-nav-li" ng-repeat="item in ['home', 'vehicles', 'pet', 'finance', 'life', 'business', 'travel'] track by $index" ng-class="{'active':$first}">
+            <a href="#/{{item}}" class="navbar-nav-btn text-capitalize">
+              <i class="navbar-navicon navbar-nav-{{item}}"></i>{{item}}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
