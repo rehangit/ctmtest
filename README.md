@@ -2,6 +2,8 @@
 
 This project implements a simple web page with credit card selection panels.
 
+[Preview](http://rehangit.github.io/ctmtest/dist/)
+
 ## Notes about the solution
 
 1. The solution is built using Bootstrap and Angular for scaffolding of the page.
